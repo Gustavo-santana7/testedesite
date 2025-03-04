@@ -1,0 +1,33 @@
+@charset "utf-8"
+
+*{}
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body{
+    background-image:linear-gradient(to right, rgba(0, 195, 255, 0.707), rgba(0, 195, 255, 0.262));
+}
+h1{
+    font-family: "Koulen", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: blue;
+}
+h1#principal{
+    color: rgb(3, 120, 120);
+}
+h2{
+    color: blue;
+}
+h2.principal{
+    color: rebeccapurple;
+}
+li{
+    color: rgba(54, 54, 246, 0.666);
+}
+dt{
+    color: rgba(54, 54, 246, 0.666);
+}
+dd{
+    color: rgba(54, 54, 246, 0.666);
+}
