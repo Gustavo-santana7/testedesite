@@ -7,19 +7,38 @@
     <link rel="shortcut icon" href="logo-html.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
-        .video01{
-            height: 450px;
-            width: 600px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: rgba(163, 88, 234, 0.733);
+       body{
+            min-width: 300px;
+            max-width: 900px;
+            
         }
-        .video02{
-            height: 450px;
-            width: 600px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: rgba(163, 88, 234, 0.733);
+        div.video01{
+           background-color: rgba(0, 0, 0, 0.355);
+           margin: 0px -20px 30px -20px;
+           padding: 20px;
+           padding-bottom: 59%;
+           position: relative;
+        }
+        div.video01 > iframe{
+            position: absolute;
+            top: 5% ;
+            left: 5% ;
+            width:90% ;
+            height:90% ;
+        }
+        div.video02{
+            background-color: rgba(0, 0, 0, 0.355) ;
+            margin: 0px -20px 30px -20px;
+            padding: 20px;
+            padding-bottom: 59%;
+            position: relative;
+        }
+        div.video02 > video{
+            position: absolute;
+            top: 5% ;
+            left: 5% ;
+            width:90% ;
+            height:90% ;
         }
     </style>
 </head>
@@ -27,12 +46,14 @@
     <h1>Teste de videos</h1>
 
     <h2>Videos externos</h2>
-    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/DjOSM72cYac?si=QGkNJOLOB_XwjePO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video01"></iframe></p>
+    <div class="video01"><iframe width="560" height="315" src="https://www.youtube.com/embed/DjOSM72cYac?si=QGkNJOLOB_XwjePO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
     <p><a href="https://youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ?si=fDq1p34jeRMftevs" target="_blank" rel="external">canal do youtube</a></p>
 
     <h2>Videos de ospedagen interna</h2>
-    <p><video src="arquivos/meu-video.mp4.mp4" width="500" controls class="video02"></video></p>
+    <div class="video02">
+        <video src="arquivos/meu-video.mp4.mp4" width="500" controls class="video02"></video>
+    </div>
 
     <p><a href="index.html"><img src="arquivos/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></p>
 </body>
